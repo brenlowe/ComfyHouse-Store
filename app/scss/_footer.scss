@@ -1,0 +1,177 @@
+.footer {
+    letter-spacing: $secondarySpacing;
+    
+    // section 1
+    &__email {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid $mainGray;
+        border-bottom: 1px solid $mainGray;
+        padding: 2rem;
+
+        p {
+            margin-right: 1rem;
+
+            @include breakpoint-down (small) {
+               margin-right: 0;
+               margin-bottom: .75rem;
+            }
+        }
+
+        form {
+            margin-right: 1rem;
+
+            @include breakpoint-down (small) {
+                margin-right: 0;
+                margin-bottom: .75rem;
+             }
+        }
+
+        input {
+            padding: .15rem;
+        }
+
+        @include breakpoint-down (small) {
+            flex-direction: column;
+            //justify-content: center;
+        }
+
+    }
+    // section 2
+    &__main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 2.5rem;
+
+        h2 {
+            margin-bottom: 1rem;
+
+        }
+
+        @include breakpoint-down (small) {
+            flex-direction: column;
+            margin: 1.5rem;
+         }
+    }
+
+    &__about {
+        display: inherit;
+        flex-direction: column;
+
+        @include breakpoint-down (small) {
+            margin-bottom: 1rem;
+         }
+    }
+
+    &__customer {
+        display: inherit;
+        flex-direction: column;
+
+        @include breakpoint-down (small) {
+            margin-bottom: 1rem;
+         }
+        
+    }
+
+    &__contact {
+        display: inherit;
+        flex-direction: column;
+
+        .footer__btn {
+            margin-bottom: .5rem;
+        }
+
+        h3 {
+            margin-top: 1rem;
+            font-size: 1.1rem;
+            margin-bottom: .3rem;
+        }
+
+        p {
+            font-size: 1rem;
+            font-weight: 300;
+        }
+    }
+
+    // section 3
+    &__end {
+        text-align: center;
+        border-top: 1px solid $mainGray;
+        border-bottom: 1px solid $mainGray;
+        padding: 2.5rem;
+        font-size: .75rem;
+
+        a {
+            font-size: .75rem;
+        }
+
+        @include breakpoint-down (small) {
+            
+         }
+    }
+
+    &__copy-links {
+        margin: 0 15rem;
+        display: flex;
+        justify-content: space-around;
+
+        @include breakpoint-down (medium) {
+            flex-direction: column;
+            margin: 0 auto;
+         }
+
+
+    }
+
+    &__copywrite {
+        margin-top: 1.5rem;
+        font-weight: 300;
+    }
+
+    //utilities
+    &__btn {
+        display: block;
+        height: 2.5rem;
+        width: 7rem;
+        //padding: .5rem 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: $mainSpacing;
+        font-size: .75rem;
+        color: $mainBlack;
+        background-color: $primaryColor;
+        border: 1px solid $primaryColor;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+    
+        &:hover {
+            background: transparent;
+            color: $primaryColor;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $mainBlack;
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 1.1;
+        transition: all 150ms ease-in-out;
+        
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+
+        &:hover {
+            opacity: .9;
+            text-decoration: underline;
+        }
+
+        @include breakpoint-down (small) {
+            margin-bottom: 1rem;
+         }
+    }
+
+}

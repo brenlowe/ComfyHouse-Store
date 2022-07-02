@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html {
+    min-width: 378px;
+    overflow-x: hidden;
+}
+
+body {
+    color: mainBlack;
+    background-color: mainWhite;
+    font-family: Roboto Condensed, sans-serif;
+    //overflow-x: hidden;
+}
+
+//Buttons
+.banner-btn {
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    letter-spacing: $mainSpacing;
+    font-size: 1rem;
+    color: $mainBlack;
+    background-color: $primaryColor;
+    border: 1px solid $primaryColor;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+        background: transparent;
+        color: $primaryColor;
+    }
+}
+

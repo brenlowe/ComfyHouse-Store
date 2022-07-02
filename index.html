@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comfy House</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="dist/style.css" />
+    <!-- icons -->
+    <script
+      src="https://kit.fontawesome.com/03cdbec85e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar-center">
+          <span class="nav-icon">
+            <i class="fas fa-bars"></i>
+          </span>
+          <img src="./images/logo.svg" alt="store logo" />
+          <div class="cart-btn">
+            <span class="nav-icon">
+              <i class="fas fa-cart-plus"></i>
+            </span>
+            <div class="cart-items">0</div>
+          </div>
+        </div>
+      </nav>
+      <div class="secondary-nav">
+        <a href="#">NEW</a>
+        <a href="#">Outdoor</a>
+        <a href="#">Living</a>
+        <a href="#">Bedroom</a>
+        <a href="#">Bath</a>
+        <a href="#">Dining</a>
+        <a href="#">Kitchen</a>
+        <a href="#">Storage</a>
+        <a href="#">Lighting</a>
+        <a href="#">SALE</a>
+      </div>
+    </header>
+
+    <!-- hero -->
+    <div class="hero">
+      <div class="hero__banner">
+        <h1 class="hero__banner-title">
+          Mid-Century Modern
+          <br />
+          Furniture Collection
+        </h1>
+        <button class="banner-btn">Shop Now</button>
+      </div>
+    </div>
+
+    <!-- products -->
+    <section class="products">
+      <div class="products__title">
+        <h2>Our Products</h2>
+      </div>
+
+      <div class="products__center"></div>
+    </section>
+    <!-- cart -->
+    <div class="cart">
+      <div class="cart__cart">
+        <span class="cart__close-cart">
+          <i class="fas fa-window-close"></i>
+        </span>
+        <h2>Your Cart</h2>
+        <div class="cart__content">
+          <!-- cart item -->
+          <div class="cart__item"></div>
+        </div>
+        <div>
+          <div class="cart__footer">
+            <h3>Your Total : $<span class="cart__cart-total">0</span></h3>
+            <button class="cart__clear-cart banner-btn">Clear Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <section class="footer__email">
+        <p>Subscribe to our newsletter</p>
+
+        <form action="" class="email">
+          <input type="email" name="email" placeholder=" Email Address" />
+        </form>
+
+        <button class="footer__btn">Submit</button>
+      </section>
+
+      <section class="footer__main">
+        <div class="footer__about">
+          <h2>About Us</h2>
+          <a href="#" class="footer__link">About Us</a>
+          <a href="#" class="footer__link">Careers</a>
+          <a href="#" class="footer__link">Gift Cards</a>
+          <a href="#" class="footer__link">Locations</a>
+          <a href="#" class="footer__link">Design Services</a>
+        </div>
+
+        <div class="footer__customer">
+          <h2>Customer Service</h2>
+          <a href="#" class="footer__link">My Orders</a>
+          <a href="#" class="footer__link">My Account</a>
+          <a href="#" class="footer__link">Help Center</a>
+          <a href="#" class="footer__link">Product Recalls</a>
+          <a href="#" class="footer__link">Report A Bug</a>
+        </div>
+
+        <div class="footer__contact">
+          <h2>Contact Us</h2>
+          <div class="footer__btnGroup">
+            <button class="footer__btn">Live Chat</button>
+            <button class="footer__btn">Call Us</button>
+          </div>
+
+          <h3>Customer Service</h3>
+          <p>Open 9am - 12am EST</p>
+        </div>
+      </section>
+
+      <section class="footer__end">
+        <div class="footer__copy-links">
+          <a href="#" class="footer__link">Privacy Policy</a>
+          <a href="#" class="footer__link">Terms of Use</a>
+          <a href="#" class="footer__link">Advertising</a>
+          <a href="#" class="footer__link"
+            >Don't Sell My Personal Information</a
+          >
+        </div>
+
+        <div class="footer__copywrite">
+          &copy; 2022 by Comfy House, 3659 Crummit Ln, Laurel, NE
+        </div>
+      </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+    <script src="app/js/app.js"></script>
+  </body>
+</html>

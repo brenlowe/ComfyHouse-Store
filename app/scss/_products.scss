@@ -1,0 +1,100 @@
+.products {
+    padding: 4rem 0;
+
+    &__title {
+
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 5rem;
+            text-transform: capitalize;
+            letter-spacing: $mainSpacing;
+        }
+    }
+
+    &__center {
+        width: 90vw;
+        margin: 0 auto;
+        max-width: 1170px;
+        display: grid;
+        //grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 2rem;
+
+        @include breakpoint-down(medium) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @include breakpoint-down(small) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__product {
+        h3 {
+            text-transform: capitalize;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+            letter-spacing: $mainSpacing;
+            text-align: center;
+        }
+
+        h4 {
+            margin-top: 0.5rem;
+            letter-spacing: $mainSpacing;
+            color: $primaryColor;
+            text-align: center;
+        }
+    }
+
+    &__img-container {
+        position: relative;
+        overflow: hidden;
+        background-position: cover;
+    }
+
+    &__img-container:hover &__bag-btn {
+        transform: translateX(0);
+    }
+
+    &__img-container:hover &__product-img {
+        opacity: 0.5;
+    }
+
+    &__product-img {
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        height: 12rem;
+        min-height: 10rem;
+        transition: all 200ms ease-in-out;
+
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
+    &__bag-btn {
+        position: absolute;
+        top: 70%;
+        right: 0;
+        background: $primaryColor;
+        border: none;
+        text-transform: uppercase;
+        padding: 0.5rem 0.75rem;
+        letter-spacing: $mainSpacing;
+        font-weight: bold;
+        transition: all 200ms ease-in-out;
+        transform: translateX(101%);
+        cursor: pointer;
+
+        &:hover {
+            color: $mainWhite;
+        }
+    }
+
+    .fa-shopping-cart {
+        margin-right: 0.5rem;
+      }
+}

@@ -1,4 +1,4 @@
-# Comfy-House-Store
+# Comfy House Store
 
 Project goals and accomplishments:
 - Learned and implemented vanilla JavaScript into a webpage.
